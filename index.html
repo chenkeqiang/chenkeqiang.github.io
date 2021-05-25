@@ -71,6 +71,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-高级人工智能期末复习 (α，β剪枝)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/25/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%20(%CE%B1%EF%BC%8C%CE%B2%E5%89%AA%E6%9E%9D)/" class="article-date">
+  <time class="dt-published" datetime="2021-05-25T14:16:57.000Z" itemprop="datePublished">2021-05-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/">高级人工智能期末复习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/05/25/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%20(%CE%B1%EF%BC%8C%CE%B2%E5%89%AA%E6%9E%9D)/">剪枝</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>树要从倒数第二层开始处理，且所有的处理都要”从左往右”处理<br>MIN层节点的取值是其子节点中的最小值，如果有子节点被剪了，那么就取剩下的子节点中的最小值.<br>MAX层节点的取值是其子节点中的最大值，如果有子节点被剪了，那么就取剩下的子节点中的最大值.<br>下边个依据不好表达也不太好理解，我多写几句，现在理解不了等看了后边的例子就能理解了，这条依据也是我们能够剪枝的依据，满足这条依据才可以剪枝.<br>假设有节点x，根据节点x的某个子节点确定了节点x的取值范围.<br>节点x也有父节点(包括直接父节点与间接父节点)，这些父节点在你确定节点x的值时，可能已经有了取值范围，也可能还没有取值范围.<br>如果这些父节点已经有取值范围了，那么，如果节点x的聚值范围与节点x的父节点(直接或间接)的取值范围没有交集或交集中只有一个元素，则剪掉节点x的其他子节点，其他子节点指的就是节点x的所有子节点中除推出节点x范围的那个节点外的节点.<br>当所有未被剪掉的节点的值都确定后，剪枝结束，题也就做完了.<br><img src="F:\blog\source\images\α，β.PNG"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/25/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%20(%CE%B1%EF%BC%8C%CE%B2%E5%89%AA%E6%9E%9D)/" data-id="ckp44hoen000078v73jcx2u6n" data-title="剪枝" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-SpringMVC01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/05/20/SpringMVC01/" class="article-date">
@@ -264,6 +307,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/05/25/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%20(%CE%B1%EF%BC%8C%CE%B2%E5%89%AA%E6%9E%9D)/">剪枝</a>
+          </li>
         
           <li>
             <a href="/2021/05/20/SpringMVC01/">SpringMVC(01)</a>
