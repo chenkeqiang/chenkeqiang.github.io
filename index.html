@@ -71,6 +71,117 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-spring/spring01/SpringMVC01" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/26/spring/spring01/SpringMVC01/" class="article-date">
+  <time class="dt-published" datetime="2021-05-26T04:12:57.000Z" itemprop="datePublished">2021-05-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Spring/">Spring</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/05/26/spring/spring01/SpringMVC01/">Spring(01)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Spring入门"><a href="#Spring入门" class="headerlink" title="Spring入门"></a>Spring入门</h1><p>在myeclipse中创建java项目，然后应用其插件使其变为Spring项目。</p>
+<p>（1）实体类Student</p>
+<p>package com.ckq.spring;</p>
+<p>public class Student {<br>    private Integer studentId;<br>    private String stuName;<br>    private Integer age;</p>
+<pre><code>public Integer getStudentId() &#123;
+    return studentId;
+&#125;
+
+public void setStudentId(Integer studentId) &#123;
+    this.studentId = studentId;
+&#125;
+
+public String getStuName() &#123;
+    return stuName;
+&#125;
+
+public void setStuName(String stuName) &#123;
+    this.stuName = stuName;
+&#125;
+
+public Integer getAge() &#123;
+    return age;
+&#125;
+
+public void setAge(Integer age) &#123;
+    this.age = age;
+&#125;
+
+public Student(Integer studentId, String stuName, Integer age) &#123;
+    super();
+    this.studentId = studentId;
+    this.stuName = stuName;
+    this.age = age;
+&#125;
+
+@Override
+public String toString() &#123;
+    return &quot;Student [studentId=&quot; + studentId + &quot;, stuName=&quot; + stuName + &quot;, age=&quot; + age + &quot;]&quot;;
+&#125;
+
+public Student() &#123;
+    super();
+&#125;
+</code></pre>
+<p>}</p>
+<p>（2）Spring的配置文件：applicationContext.xml</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<p><beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd"></p>
+<pre><code>&lt;bean id=&quot;stu&quot; class=&quot;com.ckq.spring.Student&quot;&gt;&lt;!--反射，所以写全类名--&gt;
+    &lt;property name=&quot;age&quot; value=&quot;18&quot; /&gt;
+    &lt;property name=&quot;studentId&quot; value=&quot;1001&quot; /&gt;
+    &lt;property name=&quot;stuName&quot; value=&quot;张三&quot; /&gt;
+&lt;/bean&gt;
+</code></pre>
+</beans>
+
+<p>（3）测试类</p>
+<p>package com.ckq.spring;</p>
+<p>import org.springframework.context.ApplicationContext;<br>import org.springframework.context.support.ClassPathXmlApplicationContext;</p>
+<p>public class Text {</p>
+<pre><code>public static void main(String[] args) &#123;
+    @SuppressWarnings(&quot;resource&quot;)
+    ApplicationContext ac=new ClassPathXmlApplicationContext(&quot;applicationContext.xml&quot;);
+    Student student = ac.getBean(&quot;stu&quot;,Student.class);
+    System.out.println(student);
+</code></pre>
+<p>}<br>    }</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/26/spring/spring01/SpringMVC01/" data-id="ckryn0tvf0001vkv79gdv4ebs" data-title="Spring(01)" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-高级人工智能期末复习 (α，β剪枝)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/05/25/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%20(%CE%B1%EF%BC%8C%CE%B2%E5%89%AA%E6%9E%9D)/" class="article-date">
@@ -271,6 +382,65 @@
 
 
   
+    <article id="post-第一课本" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/20/%E7%AC%AC%E4%B8%80%E8%AF%BE%E6%9C%AC/" class="article-date">
+  <time class="dt-published" datetime="2021-05-20T04:12:57.000Z" itemprop="datePublished">2021-05-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%97%A5%E8%AF%AD%E7%A7%AF%E7%B4%AF/">日语积累</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/05/20/%E7%AC%AC%E4%B8%80%E8%AF%BE%E6%9C%AC/">Japanese</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><p>（1）……..わ……です…..。</p>
+<p>判断陈述句：翻译成什么是什么。</p>
+<p>例：李さん　わ　中国人　です</p>
+<p>　　小李是中国人。</p>
+<p>（2）……..わ……ですが…..。</p>
+<p>疑问句：在陈述句的基础上加个 “吗”。</p>
+<p>在日语中是没有问号的，表示疑问语气只需在句末读出相应的语气，结尾还需用句号。</p>
+<p>（3）はい和ちがいまし</p>
+<p>疑问句的肯定否定回答：</p>
+<p>はい表示肯定，相当于汉语里的 ”是的“  ，后面可以加そいです，避免重复前面的内容</p>
+<p>いいぇ表示否定，相当于汉语里的 “不是”后面可以加ちがいまし，避免与前面重复</p>
+<p>（4）の  的</p>
+<p>日语中的比汉语使用的更频繁：看下面例句</p>
+<p>我父亲     わたし父    错</p>
+<p>​                 わたしの父　对</p>
+<p>（5）对李さん的理解</p>
+<p>在日语中，当在说别人的时候加上“さん”，如果用自己角度说，则不需要加。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/20/%E7%AC%AC%E4%B8%80%E8%AF%BE%E6%9C%AC/" data-id="ckryn0tva0000vkv76tp2528w" data-title="Japanese" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
 
 
 </section>
@@ -281,7 +451,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/SpringMVC/">SpringMVC</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/">高级人工智能期末复习</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Spring/">Spring</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/SpringMVC/">SpringMVC</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E8%AF%AD%E7%A7%AF%E7%B4%AF/">日语积累</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/">高级人工智能期末复习</a></li></ul>
     </div>
   </div>
 
@@ -309,6 +479,10 @@
       <ul>
         
           <li>
+            <a href="/2021/05/26/spring/spring01/SpringMVC01/">Spring(01)</a>
+          </li>
+        
+          <li>
             <a href="/2021/05/25/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%20(%CE%B1%EF%BC%8C%CE%B2%E5%89%AA%E6%9E%9D)/">剪枝</a>
           </li>
         
@@ -318,6 +492,10 @@
         
           <li>
             <a href="/2021/05/20/%E9%AB%98%E7%BA%A7%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/">第一章</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/20/%E7%AC%AC%E4%B8%80%E8%AF%BE%E6%9C%AC/">Japanese</a>
           </li>
         
       </ul>
